@@ -8,14 +8,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
-
     defaultConfig {
+        compileSdk = 33
         applicationId "com.crazylegend.vigilante"
         minSdkVersion 24
-        targetSdkVersion 32
-        versionCode 19
-        versionName "1.2.6"
+        targetSdkVersion 33
+        versionCode 20
+        versionName "1.2.7"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -66,7 +65,7 @@ android {
 
 dependencies {
     //ui
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation "com.github.skydoves:colorpickerview:2.2.4"
     implementation "androidx.transition:transition-ktx:1.4.1"
@@ -75,7 +74,7 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.2.0'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.fragment:fragment-ktx:1.5.5'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation "androidx.startup:startup-runtime:1.1.1"
 
     //android tests
@@ -140,7 +139,7 @@ dependencies {
 
     //sql cipher
     implementation "net.zetetic:android-database-sqlcipher:4.5.3"
-    implementation "androidx.sqlite:sqlite-ktx:2.2.0"
+    implementation "androidx.sqlite:sqlite-ktx:2.3.0"
 
     implementation "androidx.room:room-ktx:$room_version"
     implementation "androidx.room:room-paging:$room_version"
